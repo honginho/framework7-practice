@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS, Material Theme -->
+    <link rel="stylesheet" href="../framework7/css/framework7.min.css">
+    <link rel="stylesheet" href="../css/framework7-icons.css">
+    <!-- Path to your custom app styles-->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+        .badge {
+            margin: 1px;
+        }
+
+        .ios .badge {
+            margin-bottom: 2px;
+        }
+
+        .item-choose {
+            background-color: rgba(0, 0, 0, .03);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- App root element -->
+    <div id="app">
+        <!-- Statusbar overlay -->
+        <div class="statusbar"></div>
+
+        <!-- Side panel -->
+        <div class="panel panel-left panel-cover">
+            <div id="menu" class="block"></div>
+        </div>
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-page="index" class="page">
+                <div class="navbar">
+                    <div class="navbar-inner sliding">
+                        <div class="left">
+                            <a class="panel-open link icon-only" href="#">
+                                <i class="f7-icons">
+                                    bars
+                                </i>
+                            </a>
+                        </div>
+                        <div class="title center">
+                            Main Page
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page-content">
+                    <!-- List View -->
+                    <div class="block-title">
+                        選一間早餐店吧！
+                    </div>
+                    <div class="block">
+                        <div class="row">
+                            <a href="/menu/" class="col button button-fill button-raised">
+                                味芳
+                            </a>
+                            <a href="/menu/" class="col button button-fill button-raised">
+                                晨間
+                            </a>
+                            <a href="/menu/" class="col button button-fill button-raised">
+                                學店
+                            </a>
+                            <a href="/menu/" class="col button button-fill button-raised">
+                                睡覺
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="../framework7/js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/checkout.js"></script>
+</body>
+
+</html>
